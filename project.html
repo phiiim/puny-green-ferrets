@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Floor Plan</title>
+  <link href="test.css" rel="stylesheet">
+  <script src="test.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- D3.JS -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale@4"></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sutardja Dai Hall Sensors</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <button class="btn btn-outline-primary chartBtn" type="submit"><a href="#forth">4/F</a></button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-primary chartBtn" type="submit"><a href="#fifth">5/F</a></button>
+          </li>
+           <li class="nav-item">
+            <button class="btn btn-outline-primary chartBtn" type="submit"><a href="#sixth">6/F</a></button>
+          </li>
+           <li class="nav-item">
+            <button class="btn btn-outline-primary chartBtn" type="submit"><a href="#seventh">7/F</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- 4th floorplan -->
+<div class="fullwidth ">
+  <div class="left col-1"></div>
+  <div class=" floorplan col-8 " id="forth">
+    <div class="titlebar">
+      <h1>4th floor</h1>
+
+    </div>
+  
+    <div class="rowfloor  container">
+      <div class="horizon col forth">
+        <div class="gridbox used col-1 four13" id="active">413</div>
+        <div class="gridbox used col-1 four16" id="active">416</div>
+        <div class="gridbox used col-1 four17" id="active">417</div>
+        <div class="gridbox used col-1 four19" id="active">419</div>
+        <div class="gridbox used col-1 four21" id="active">421</div>
+        <div class="gridbox used col-1 four23" id="active">423</div>
+        <div class="gridbox used col-1 four25" id="active">425</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox used col-1 four22" id="active">422</div>
+        <div class="gridbox used col-1 four24" id="active">424</div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+                
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+                
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+                
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox used col-1 four42" id="active">442</div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox used col-1 four46" id="active">446</div>
+        <div class="gridbox used col-1 four448" id="active">448</div>
+        <div class="gridbox used col-1 four52" id="active">452</div>
+        <div class="gridbox used col-1 four54" id="active">454</div>
+        <div class="gridbox used col-1 four56" id="active">456</div>
+        <div class="gridbox used col-1 four58" id="active">458</div>
+        <div class="gridbox used col-1 four62" id="active">462</div>
+        <div class="gridbox space col-1 four"></div>
+
+      </div>
+  
+  </div>
+  
+  </div>
+  <div class="right col-2">
+    <h1>d</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <button class="btn btn-outline-primary floorBtn co24" type="button" id="co24" >CO2 level</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn humidity4" type="button" id="humidity4">Humidity</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="light4">Light</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="temperature4">Tempertare</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- 5th floorplan -->
+<div class="fullwidth ">
+  <div class="left col-1"></div>
+  <div class="floorplan col-8" id="fifth">
+    <div class="titlebar">
+      <h1>5th floor</h1>
+    </div>
+  
+    <div class="rowfloor container">
+      <div class="horizon col fifth">
+        <div class="gridbox used col-1 five11">511</div>
+        <div class="gridbox used col-1 five13">513</div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox used col-1 five10">510</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox used col-1 five52">552</div>
+        <div class="gridbox used col-2 five54">554</div>
+        <div class="gridbox used col-1 five56">556</div>
+        <div class="gridbox used col-1 five58">558</div>
+        <div class="gridbox used col-1 five62">562</div>
+        <div class="gridbox used col-1 five64">564</div>
+        <div class="gridbox space col-1"></div>
+
+
+      </div>
+
+  </div>
+  
+  </div>
+  <div class="right col-2">
+    <h1>d</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <button class="btn btn-outline-primary floorBtn co24" type="button" id="co25" >CO2 level</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn humidity4" type="button" id="humidity5">Humidity</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="light5">Light</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="temperature5">Tempertare</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- 6th floorplan -->
+<div class="fullwidth ">
+  <div class="left col-1"></div>
+  <div class=" floorplan col-8 " id="sixth">
+    <div class="titlebar">
+      <h1>6th floor</h1>
+
+    </div>
+  
+    <div class="rowfloor container">
+      <div class="horizon col sixth">
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox used col-1 six21e">621e</div>
+        <div class="gridbox used col-1 six21d">621d</div>
+        <div class="gridbox used col-1 six21c">621c</div>
+        <div class="gridbox used col-1 six21b">621b</div>
+        <div class="gridbox used col-1 six21a">621a</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox used col-1 six52a">652a</div>
+        <div class="gridbox used col-1 six52b">652b</div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox used col-1 six56b">656b</div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox used col-1 six40">640</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox used col-1 six44">644</div>
+        <div class="gridbox used col-1 six64">664</div>
+        <div class="gridbox used col-1 six48">648</div>
+        <div class="gridbox used col-1 six52a">652a</div>
+        <div class="gridbox used col-1 six52b">652b</div>
+        <div class="gridbox space col"></div>
+        <div class="gridbox used col-1 six56b">656b</div>
+        <div class="gridbox used col-1 six68">668</div>
+
+
+
+      </div>
+
+  
+  
+  
+  </div>
+  
+  </div>
+  <div class="right col-2">
+    <h1>d</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <button class="btn btn-outline-primary floorBtn co24" type="button" id="co26" >CO2 level</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn humidity4" type="button" id="humidity6">Humidity</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="light6">Light</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="temperature6">Tempertare</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- 7th floorplan -->
+<div class="fullwidth ">
+  <div class="left col-1"></div>
+  <div class="seventh floorplan col-8" id="seventh">
+    <div class="titlebar">
+      <h1>7th floor</h1>
+
+    </div>
+  
+    <div class="rowfloor container">
+      <div class="horizon col seventh">
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox used col-1 seven17">717</div>
+        <div class="gridbox used col-1 seven19">719</div>
+        <div class="gridbox used col-1 seven21">721</div>
+        <div class="gridbox used col-1 seven23">723</div>
+        <div class="gridbox space col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox space col-4"></div>
+        <div class="gridbox used col-1 seven22">722</div>
+        <div class="gridbox used col-1 seven24">724</div>
+        <div class="gridbox used col-1 seven26">726</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox empty col-1"></div>
+
+        <div class="gridbox empty col-2"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox used col-1 seven48">748</div>
+        <div class="gridbox used col-1 seven52">752</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox used col-1 seven76">776</div>
+
+        <div class="gridbox used col-1 seven">734</div>
+        <div class="gridbox space col-3"></div>
+        <div class="gridbox used col-1 seven">746</div>
+        <div class="gridbox used col-1 seven">754</div>
+        <div class="gridbox empty col-1"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox space col-2"></div>
+        <div class="gridbox space col-1"></div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="right col-2">
+    <h1>d</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <button class="btn btn-outline-primary floorBtn co24" type="button" id="co27" >CO2 level</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn humidity4" type="button" id="humidity7">Humidity</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="light7">Light</button>
+      </li>
+       <li class="nav-item">
+        <button class="btn btn-outline-primary floorBtn" type="button" id="temperature7">Tempertare</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+    
+  <script src="a.js"></script>
+  <script src="test.js"></script>
+  </body>
+</html>
